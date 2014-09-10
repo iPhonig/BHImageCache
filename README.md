@@ -11,7 +11,7 @@ Usage
 
 - Import UIImageView+BHImageCache for UIImageView support
 - Import UIButton+BHImageCache for UIButton support
-- Call method on UIImageView or UIButton just like you you normally would.
+- Call method on UIImageView or UIButton just like you would normally call any method.
 
 ```
 //UIImageView
