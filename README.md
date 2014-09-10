@@ -1,10 +1,16 @@
 BHImageCache
 ============
 
-Image caching library that utilizes NSURLSession and supports UIImageView as well as UIButton. 
-Also supports fading images and placeholders (for UIImageView) while image is being downloaded.
+Image caching library that utilizes NSURLSession and supports UIImageView as well as UIButton.
 
 ![ss](https://raw.githubusercontent.com/iPhonig/BHImageCache/master/screenshot.png)
+
+Key Features
+============
+
+- Refresh cache option (could be used for a user profile photo)
+- Fading in images
+- Placeholder images while an image is being downloaded (UIImageView only support for now)
 
 Usage
 ============
