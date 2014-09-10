@@ -21,6 +21,11 @@
 		FE1269A519C0C88400A9492B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE12698719C0C88400A9492B /* UIKit.framework */; };
 		FE1269AD19C0C88400A9492B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE1269AB19C0C88400A9492B /* InfoPlist.strings */; };
 		FE1269AF19C0C88400A9492B /* BHImageCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1269AE19C0C88400A9492B /* BHImageCacheTests.m */; };
+		FE1269C319C0C89B00A9492B /* BHImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1269BA19C0C89B00A9492B /* BHImageDownloader.m */; };
+		FE1269C419C0C89B00A9492B /* BHImageDownloaderFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1269BC19C0C89B00A9492B /* BHImageDownloaderFileManager.m */; };
+		FE1269C519C0C89B00A9492B /* NSString+CacheFileName.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1269BE19C0C89B00A9492B /* NSString+CacheFileName.m */; };
+		FE1269C619C0C89B00A9492B /* UIButton+BHImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1269C019C0C89B00A9492B /* UIButton+BHImageCache.m */; };
+		FE1269C719C0C89B00A9492B /* UIImageView+BHImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1269C219C0C89B00A9492B /* UIImageView+BHImageCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		FE1269AA19C0C88400A9492B /* BHImageCacheTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BHImageCacheTests-Info.plist"; sourceTree = "<group>"; };
 		FE1269AC19C0C88400A9492B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE1269AE19C0C88400A9492B /* BHImageCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHImageCacheTests.m; sourceTree = "<group>"; };
+		FE1269B919C0C89B00A9492B /* BHImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHImageDownloader.h; sourceTree = "<group>"; };
+		FE1269BA19C0C89B00A9492B /* BHImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHImageDownloader.m; sourceTree = "<group>"; };
+		FE1269BB19C0C89B00A9492B /* BHImageDownloaderFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHImageDownloaderFileManager.h; sourceTree = "<group>"; };
+		FE1269BC19C0C89B00A9492B /* BHImageDownloaderFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHImageDownloaderFileManager.m; sourceTree = "<group>"; };
+		FE1269BD19C0C89B00A9492B /* NSString+CacheFileName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CacheFileName.h"; sourceTree = "<group>"; };
+		FE1269BE19C0C89B00A9492B /* NSString+CacheFileName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CacheFileName.m"; sourceTree = "<group>"; };
+		FE1269BF19C0C89B00A9492B /* UIButton+BHImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BHImageCache.h"; sourceTree = "<group>"; };
+		FE1269C019C0C89B00A9492B /* UIButton+BHImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BHImageCache.m"; sourceTree = "<group>"; };
+		FE1269C119C0C89B00A9492B /* UIImageView+BHImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+BHImageCache.h"; sourceTree = "<group>"; };
+		FE1269C219C0C89B00A9492B /* UIImageView+BHImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+BHImageCache.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +127,7 @@
 		FE12698919C0C88400A9492B /* BHImageCache */ = {
 			isa = PBXGroup;
 			children = (
+				FE1269B819C0C89B00A9492B /* BHImageCache */,
 				FE12699219C0C88400A9492B /* AppDelegate.h */,
 				FE12699319C0C88400A9492B /* AppDelegate.m */,
 				FE12699519C0C88400A9492B /* Main.storyboard */,
@@ -150,6 +166,23 @@
 				FE1269AB19C0C88400A9492B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE1269B819C0C89B00A9492B /* BHImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				FE1269B919C0C89B00A9492B /* BHImageDownloader.h */,
+				FE1269BA19C0C89B00A9492B /* BHImageDownloader.m */,
+				FE1269BB19C0C89B00A9492B /* BHImageDownloaderFileManager.h */,
+				FE1269BC19C0C89B00A9492B /* BHImageDownloaderFileManager.m */,
+				FE1269BD19C0C89B00A9492B /* NSString+CacheFileName.h */,
+				FE1269BE19C0C89B00A9492B /* NSString+CacheFileName.m */,
+				FE1269BF19C0C89B00A9492B /* UIButton+BHImageCache.h */,
+				FE1269C019C0C89B00A9492B /* UIButton+BHImageCache.m */,
+				FE1269C119C0C89B00A9492B /* UIImageView+BHImageCache.h */,
+				FE1269C219C0C89B00A9492B /* UIImageView+BHImageCache.m */,
+			);
+			path = BHImageCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE12699A19C0C88400A9492B /* ViewController.m in Sources */,
+				FE1269C619C0C89B00A9492B /* UIButton+BHImageCache.m in Sources */,
+				FE1269C419C0C89B00A9492B /* BHImageDownloaderFileManager.m in Sources */,
 				FE12699419C0C88400A9492B /* AppDelegate.m in Sources */,
+				FE1269C519C0C89B00A9492B /* NSString+CacheFileName.m in Sources */,
+				FE1269C719C0C89B00A9492B /* UIImageView+BHImageCache.m in Sources */,
+				FE1269C319C0C89B00A9492B /* BHImageDownloader.m in Sources */,
 				FE12699019C0C88400A9492B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
